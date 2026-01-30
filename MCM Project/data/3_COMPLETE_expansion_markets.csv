@@ -1,0 +1,11 @@
+City,MSA_Pop_Millions,Median_Income,GDP_PerCapita,Current_NBA_Team,Arena_Ready,Pro_Teams,Market_Score
+Seattle,4.01,93500,102000,None,Yes,4,11.915
+San Diego,3.3,88000,78000,None,Yes,1,10.549999999999999
+St. Louis,2.82,59600,75000,None,Yes,3,9.08
+Baltimore,2.84,76000,82000,None,Partial,3,8.959999999999999
+Austin,2.3,80100,70000,None,No,1,8.149999999999999
+Pittsburgh,2.37,65500,73000,None,Yes,4,8.004999999999999
+Las Vegas,2.23,64200,65000,None,Yes,2,7.994999999999999
+Kansas City,2.19,59700,72000,None,Partial,3,7.484999999999999
+Louisville,1.4,59600,68000,None,Yes,1,7.2
+Nashville,1.99,64100,76000,None,Partial,4,7.085

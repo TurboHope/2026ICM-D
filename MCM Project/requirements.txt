@@ -1,0 +1,10 @@
+pandas
+requests
+beautifulsoup4
+selenium
+nba_api
+pytrends
+openpyxl
+praw
+lxml
+html5lib

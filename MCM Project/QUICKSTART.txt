@@ -1,0 +1,173 @@
+================================================================================
+MCM PROJECT - BASKETBALL DATA COLLECTION SYSTEM
+QUICK START GUIDE
+================================================================================
+
+📦 STEP 1: INSTALL DEPENDENCIES
+--------------------------------
+Run this command in your terminal:
+
+    pip install -r requirements.txt
+
+This will install:
+  ✓ pandas - Data manipulation
+  ✓ requests - HTTP requests
+  ✓ beautifulsoup4 - Web scraping
+  ✓ nba_api - Official NBA data
+  ✓ pytrends - Google Trends data
+  ✓ selenium - Browser automation (if needed)
+  ✓ openpyxl - Excel support
+
+
+🚀 STEP 2: RUN DATA COLLECTION
+--------------------------------
+Option A - Collect Everything (Recommended):
+
+    python run_all_collectors.py
+
+Option B - Run Individual Collectors:
+
+    python data_collection.py          # Performance data
+    python lineup_data_collector.py    # Lineup/network data
+    python social_media_collector.py   # Trends & social data
+
+
+📊 STEP 3: MERGE DATASETS
+--------------------------------
+After collecting data, merge everything:
+
+    python merge_datasets.py
+
+This creates master datasets:
+  • MASTER_player_complete.csv - Complete player profiles
+  • MASTER_player_network_metrics.csv - Network analysis
+  • MASTER_team_data.csv - Team-level data
+
+
+📁 OUTPUT STRUCTURE
+--------------------------------
+All data will be saved in ./data/ directory:
+
+Section 1 - Performance Data (1_*.csv)
+  • Player stats (basic + advanced)
+  • PER, WS, BPM, USG%, TS%
+  • ⭐ Lineup network edges (critical for network analysis)
+
+Section 2 - Financial Data (2_*.csv)
+  • Player salaries
+  • Team valuations (template)
+
+Section 3 - Soft Data (3_*.csv)
+  • Google Trends
+  • Social media templates
+  • City market data
+
+
+🔑 KEY FILES FOR YOUR MCM PROJECT
+--------------------------------
+1. MASTER_player_complete.csv
+   → Complete player profiles with all metrics
+
+2. 1_lineup_network_edges.csv
+   → Network edge list for player interaction analysis
+   → Use this to build graphs showing player chemistry
+
+3. 3_google_trends_*.csv
+   → Market popularity and expansion analysis
+
+4. 3_city_market_data.csv
+   → Demographics for expansion team decisions
+
+
+🕸️ NETWORK ANALYSIS EXAMPLE
+--------------------------------
+The lineup data creates a network where:
+  • Nodes = Players
+  • Edges = Time played together
+  • Edge weight = Minutes together
+  • Edge attribute = Net rating (performance)
+
+Use this to find:
+  ✓ Most influential players (centrality)
+  ✓ Best player combinations
+  ✓ Team chemistry patterns
+
+
+⚠️ MANUAL DATA NEEDED
+--------------------------------
+Some data requires manual collection:
+
+1. Forbes Team Valuations
+   → Visit Forbes.com annual NBA team value list
+   → Fill in: 2_team_valuations_template.csv
+
+2. Social Media Metrics
+   → Instagram/Twitter follower counts
+   → Fill in: 3_social_media_*_template.csv
+   → Or use Social Blade website
+
+3. Verify Salary Data
+   → Check Spotrac.com for latest salaries
+   → Update: 2_player_salaries.csv if needed
+
+
+🐛 TROUBLESHOOTING
+--------------------------------
+Error: "Module not found: nba_api"
+→ Run: pip install nba-api
+
+Error: "Connection timeout"
+→ Increase delay in scripts (self.delay = 5)
+→ Check internet connection
+
+Error: "Empty DataFrame"
+→ API may be down, try again later
+→ Check if season parameter is valid
+
+
+📚 NEXT STEPS FOR MCM
+--------------------------------
+1. ✅ Collect all data
+2. ✅ Merge datasets
+3. 📊 Perform network analysis on lineup data
+4. 💰 Calculate value metrics (performance per dollar)
+5. 📈 Market analysis using trends + city data
+6. 🎯 Build your mathematical model
+
+
+🎯 RECOMMENDED ANALYSIS WORKFLOW
+--------------------------------
+A. Player Value Analysis
+   • Merge performance + salary data
+   • Calculate efficiency per dollar
+   • Identify undervalued players
+
+B. Network Analysis
+   • Load lineup_network_edges.csv
+   • Build player interaction graph
+   • Find optimal player combinations
+
+C. Market Analysis
+   • Use Google Trends + city data
+   • Identify expansion opportunities
+   • Correlate popularity with revenue
+
+D. Predictive Modeling
+   • Historical trends
+   • Performance projections
+   • Revenue forecasting
+
+
+📧 ADDITIONAL RESOURCES
+--------------------------------
+• README.md - Full documentation
+• nba_api docs: https://github.com/swar/nba_api
+• Basketball Reference: https://www.basketball-reference.com/
+• Spotrac: https://www.spotrac.com/nba/
+
+
+================================================================================
+GOOD LUCK WITH YOUR MCM PROJECT! 🏀
+================================================================================
+
+Questions? Check README.md for detailed documentation.
