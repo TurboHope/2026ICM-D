@@ -1,0 +1,11 @@
+City,State,Population,Metro_Population,GDP_Billions,NBA_Team
+Los Angeles,CA,3900000,13200000,0,Lakers/Clippers
+New York,NY,8336000,19216000,0,Knicks/Nets
+Chicago,IL,2746000,9618000,0,Bulls
+Boston,MA,692000,4873000,0,Celtics
+San Francisco,CA,873000,4749000,0,Warriors
+Dallas,TX,1343000,7637000,0,Mavericks
+Houston,TX,2304000,7122000,0,Rockets
+Miami,FL,442000,6138000,0,Heat
+Phoenix,AZ,1608000,4845000,0,Suns
+Philadelphia,PA,1584000,6102000,0,76ers
